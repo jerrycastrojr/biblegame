@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Khazel</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tours</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 60px;
+        }
+        .tagline {
+            font-size: 20px;
+            font-style: italic;
+            margin-left: 10px;
+            color: #ffdd59;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffdd59;
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+            animation: slideUp 1s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .section {
+            margin: 30px auto;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            max-width: 850px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #34495e;
+            font-weight: bold;
+        }
+        .scrollable-area {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+        .scrollable-area video {
+            flex-shrink: 0;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .scrollable-area img {
+            flex-shrink: 0;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .scrollable-images {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+        .scrollable-images img {
+            flex-shrink: 0;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .contact a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #ffdd59;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://github.com/jerrycastrojr/khazel/khazellogo.png" alt="Logo">
+            <span class="tagline">"Explore the World with Us!"</span>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#payments">Payments</a>
+            <a href="#share">Share</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="scrollable-area">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="scrollable-images">
+            <img src="image1.jpg" alt="Scenic View">
+            <img src="image2.jpg" alt="Travel Destination">
+        </div>
+
+        <div id="about" class="section">
+            <h2>About</h2>
+            <p>Welcome to KHAZEL Travel & Tours. We offer personalized travel packages to make your journey memorable and stress-free.</p>
+        </div>
+
+        <div id="services" class="section">
+            <h2>Services</h2>
+            <ul style="text-align: left; font-size: 18px; line-height: 1.6;">
+                <li>Customized Travel Packages</li>
+                <li>Hotel and Accommodation Booking</li>
+                <li>Flight and Transportation Assistance</li>
+                <li>Guided Tours</li>
+                <li>Travel Insurance</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:travel@example.com">travel@example.com</a></p>
+            <p>Cellphone: <a href="09464607365">09464607365</a></p>
+            <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        </div>
+
+        <div id="payments" class="section">
+            <h2>Payments</h2>
+            <p>We accept payments via credit card, PayPal, and bank transfers. Contact us for more details.</p>
+        </div>
+
+        <div id="share" class="section">
+            <h2>Share</h2>
+            <p>Share your experience with us on social media and tag us!</p>
+            <button style="padding: 12px 25px; background-color: #2980b9; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">Share Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Khazel Travel & Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
